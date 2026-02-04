@@ -22,7 +22,7 @@
     </properties>
 
     <dependencies>
-        <!-- Google Gemini API SDK -->
+        <!-- Google Gemini  API SDK -->
         <dependency>
             <groupId>com.google.genai</groupId>
             <artifactId>google-genai</artifactId>
