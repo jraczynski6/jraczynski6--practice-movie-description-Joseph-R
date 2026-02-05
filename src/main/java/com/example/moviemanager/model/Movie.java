@@ -7,31 +7,31 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Movie {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-
+    private Integer id;
     private String title;
-    private Double rating;
+    private Integer rating;
     private String description;
+    private String director;
+
 
     public Movie() {
-
     }
 
-    public Movie(int id, String title, Double rating, String description) {
+    public Movie(Integer id, String title, Integer rating, String description, String director){
         this.id = id;
         this.title = title;
         this.rating = rating;
         this.description = description;
+        this.director = director;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -43,11 +43,11 @@ public class Movie {
         this.title = title;
     }
 
-    public Double getRating() {
+    public Integer getRating() {
         return rating;
     }
 
-    public void setRating(Double rating) {
+    public void setRating(Integer rating) {
         this.rating = rating;
     }
 
@@ -57,5 +57,13 @@ public class Movie {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getDirector() {
+        return director;
+    }
+
+    public void setDirector(String director) {
+        this.director = director;
     }
 }
