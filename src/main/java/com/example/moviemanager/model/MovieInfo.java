@@ -4,6 +4,8 @@ public class MovieInfo {
     private String director;
     private String description;
 
+    public MovieInfo() {}
+
     public MovieInfo(String director, String description) {
         this.director = director;
         this.description = description;
@@ -16,7 +18,6 @@ public class MovieInfo {
     public void setDirector(String director) {
         this.director = director;
     }
-
 
     public String getDescription() {
         return description;
